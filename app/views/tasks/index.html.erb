@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+   <div class="col-md-6 col-md-offset-3">
+    <h1>Display all Tasks</h1>
+    <ul>
+     <% @tasks.each do |task| %>
+      <li><%= link_to task.title, task_path(task) %></li>
+     <% end %>
+    </ul>
+   </div>
+  </div>
+</div>
